@@ -1,0 +1,97 @@
+/*style*/
+body {
+  background-color: #1b262c;
+}
+.wrapper {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  align-items: center;
+}
+#main {
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.5s;
+}
+.content {
+  border-radius: 5px;
+  margin: 45px auto;
+  padding: 0;
+  min-height: min-content;
+  max-width: min-content;
+  background-color: #f5f8fd;
+}
+.content img {
+  float: left;
+  padding: 80px 50px;
+}
+.content h2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-right: 85px;
+  float: right;
+  font-size: 40px;
+  color: #113e57;
+}
+form {
+  float: right;
+  display: block;
+  margin: 10px 35px;
+}
+.ip {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin-bottom: 15px;
+  width: 220px;
+  border: inherit;
+  background-color: #e6e6e6;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  height: 40px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  text-transform: uppercase;
+  height: 40px;
+  border-radius: 25px;
+  background: #113e57;
+  color: white;
+  border: inherit;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 15px;
+}
+.submit:hover {
+  background-color: #149ddd;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
